@@ -20,7 +20,12 @@ defmodule PerimeterWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PerimeterWeb do
-  #   pipe_through :api
-  # end
+  scope "/api" do
+    pipe_through(:api)  #pipeline through which the request have to be routed
+
+    forward "/graphiql", Absinthe.Plug.GraphiQL,
+      schema: PerimeterWeb.Schema,
+      interface: :simple,
+      context: %{pubsub: PerimeterWeb.Endpoint}
+  end
 end
