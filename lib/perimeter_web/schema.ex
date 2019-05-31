@@ -14,6 +14,7 @@ defmodule PerimeterWeb.Schema do
     field :name, :string
     field :length, :float
     field :foot_travel_only, :boolean
+    field :trailheads, list_of(:trailhead)
   end
 
   query do
