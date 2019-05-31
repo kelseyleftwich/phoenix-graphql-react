@@ -7,7 +7,7 @@ defmodule Perimeter.Trails.Trailhead do
     field :longitude, :float
     field :name, :string
 
-    many_to_many :trails, Perimeter.Trails.Trails, join_through: "trails_trailheads"
+    many_to_many :trails, Perimeter.Trails.Trail, join_through: "trails_trailheads"
 
     timestamps()
   end
