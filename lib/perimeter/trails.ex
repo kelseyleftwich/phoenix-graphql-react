@@ -114,7 +114,9 @@ defmodule Perimeter.Trails do
 
   """
   def list_trails do
-    Repo.all(Trail)
+    #Repo.all(Trail) |> Repo.preload(:trailheads)
+    Repo.all from t in Trail, 
+    preload: [:trailheads]
   end
 
   @doc """
