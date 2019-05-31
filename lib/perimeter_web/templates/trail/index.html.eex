@@ -1,4 +1,4 @@
-<h1>Trails API</h1>
+<h1>Trails</h1>
 <ul>
   <li>Query</li>
 
@@ -9,11 +9,11 @@
 
   <li>Mutations</li>
     <ul>
-    <li>Create</li>
+      <li>Create</li>
 
-    <ul>
-      <li>trails</li>
-      <li>trailheads</li>
+      <ul>
+        <li>trails</li>
+        <li>trailheads</li>
+      </ul>
     </ul>
-</ul>
 </ul>
