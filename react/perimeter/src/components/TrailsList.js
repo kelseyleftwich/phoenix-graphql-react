@@ -11,6 +11,9 @@ const TrailsList = () => (
           name
           length
           footTravelOnly
+          trailheads {
+            name
+          }
         }
       }
     `}

@@ -1,13 +1,22 @@
 import React from "react";
+import Trailheads from "./Trailheads";
 
-const Trail = ({ trail }) => (
-  <div>
-    <h3>{trail.name}</h3>
-    <ul>
-      <li>Length: {trail.length} miles</li>
-      <li>Foot travel only? {trail.footTravelOnly ? "Yes" : "No"}</li>
-    </ul>
-  </div>
-);
+const Trail = ({ trail }) => {
+  const { name, footTravelOnly, length, trailheads } = trail;
+  return (
+    <div>
+      <h3>{name}</h3>
+      <ul>
+        {footTravelOnly && (
+          <li>
+            <b>Foot travel only</b>
+          </li>
+        )}
+        <li>Length: {length} miles</li>
+        {trailheads.length > 0 && <Trailheads trailheads={trailheads} />}
+      </ul>
+    </div>
+  );
+};
 
 export default Trail;
