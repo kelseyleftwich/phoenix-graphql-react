@@ -1,0 +1,19 @@
+<h1>Trails API</h1>
+<ul>
+  <li>Query</li>
+
+    <ul>
+      <li>trails</li>
+      <li>trailheads</li>
+    </ul>
+
+  <li>Mutations</li>
+    <ul>
+    <li>Create</li>
+
+    <ul>
+      <li>trails</li>
+      <li>trailheads</li>
+    </ul>
+</ul>
+</ul>
